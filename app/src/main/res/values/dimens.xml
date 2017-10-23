@@ -1,0 +1,73 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="btnsize_5">5dp</dimen>
+    <dimen name="btnsize_6">6dp</dimen>
+    <dimen name="btnsize_7">7dp</dimen>
+    <dimen name="btnsize_8">8dp</dimen>
+    <dimen name="btnsize_9">9dp</dimen>
+    <dimen name="btnsize_10">10dp</dimen>
+    <dimen name="btnsize_11">11dp</dimen>
+    <dimen name="btnsize_12">12dp</dimen>
+    <dimen name="btnsize_13">13dp</dimen>
+    <dimen name="btnsize_14">14dp</dimen>
+    <dimen name="btnsize_15">15dp</dimen>
+    <dimen name="btnsize_16">16dp</dimen>
+    <dimen name="btnsize_17">17dp</dimen>
+    <dimen name="btnsize_18">18dp</dimen>
+    <dimen name="btnsize_19">19dp</dimen>
+    <dimen name="btnsize_20">20dp</dimen>
+    <dimen name="btnsize_21">21dp</dimen>
+    <dimen name="btnsize_22">22dp</dimen>
+    <dimen name="btnsize_23">23dp</dimen>
+    <dimen name="btnsize_24">24dp</dimen>
+    <dimen name="btnsize_25">25dp</dimen>
+    <dimen name="btnsize_26">26dp</dimen>
+    <dimen name="btnsize_27">27dp</dimen>
+    <dimen name="btnsize_28">28dp</dimen>
+    <dimen name="btnsize_29">29dp</dimen>
+    <dimen name="btnsize_30">30dp</dimen>
+    <dimen name="btnsize_31">31dp</dimen>
+    <dimen name="btnsize_32">32dp</dimen>
+    <dimen name="btnsize_33">33dp</dimen>
+    <dimen name="btnsize_34">34dp</dimen>
+    <dimen name="btnsize_35">35dp</dimen>
+    <dimen name="btnsize_36">36dp</dimen>
+    <dimen name="btnsize_37">37dp</dimen>
+    <dimen name="btnsize_38">38dp</dimen>
+    <dimen name="btnsize_39">39dp</dimen>
+    <dimen name="btnsize_40">40dp</dimen>
+    <dimen name="btnsize_41">41dp</dimen>
+    <dimen name="btnsize_42">42dp</dimen>
+    <dimen name="btnsize_43">43dp</dimen>
+    <dimen name="btnsize_44">44dp</dimen>
+    <dimen name="btnsize_45">45dp</dimen>
+    <dimen name="btnsize_46">46dp</dimen>
+    <dimen name="btnsize_47">47dp</dimen>
+    <dimen name="btnsize_48">48dp</dimen>
+    <dimen name="btnsize_49">49dp</dimen>
+    <dimen name="btnsize_50">50dp</dimen>
+
+
+
+    <!-- 文字尺寸像素. -->
+    <dimen name="txtsize_10">10sp</dimen>
+    <dimen name="txtsize_11">11sp</dimen>
+    <dimen name="txtsize_12">12sp</dimen>
+    <dimen name="txtsize_13">13sp</dimen>
+    <dimen name="txtsize_14">14sp</dimen>
+    <dimen name="txtsize_15">15sp</dimen>
+    <dimen name="txtsize_16">16sp</dimen>
+    <dimen name="txtsize_17">17sp</dimen>
+    <dimen name="txtsize_18">18sp</dimen>
+    <dimen name="txtsize_19">19sp</dimen>
+    <dimen name="txtsize_20">20sp</dimen>
+    <dimen name="txtsize_21">21sp</dimen>
+    <dimen name="txtsize_22">22sp</dimen>
+    <dimen name="txtsize_23">23sp</dimen>
+    <dimen name="txtsize_24">24sp</dimen>
+    <dimen name="txtsize_25">25sp</dimen>
+
+
+
+</resources>

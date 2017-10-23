@@ -1,3 +1,57 @@
 <resources>
-    <string name="app_name">lfcoming</string>
+    <string name="app_name">LF来了</string>
+    <string name="lf_home">主页</string>
+    <string name="lf_diaries">LF日记</string>
+    <string name="lf_comrades">LF战友</string>
+    <string name="lf_house">LF之家</string>
+
+    <string name="input_phone">请输入您的手机号</string>
+    <string name="input_pwd">请输入您的密码</string>
+    <string name="become_lf">成为LF</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="login">登录</string>
+    <string name="third_party_login">第三方登录</string>
+    <string name="input_code">请输入验证码</string>
+    <string name="next">下一步</string>
+    <string name="get_code">获取验证码</string>
+    <string name="input_again_pwd">请再次输入密码</string>
+    <string name="again_shure">再次确认</string>
+
+    <string name="shure">确认</string>
+    <string name="real_name">实名认证</string>
+    <string name="name">姓名</string>
+    <string name="sex">性别</string>
+    <string name="man">男</string>
+    <string name="women">女</string>
+    <string name="id">身份证</string>
+    <string name="adress">地址</string>
+    <string name="input_adress">请输入有效的地址</string>
+
+    <string name="phone">手机</string>
+    <string name="pwd_setting">密码设置</string>
+    <string name="data_audit_pass">资料审核通过</string>
+    <string name="data_audit_nopass">资料未核通过</string>
+    <string name="choosing_num">请珍惜唯一的雷锋号</string>
+    <string name="choosing_btn_comit_num">确认号码</string>
+
+    <string name="input_two_ten_num">2-10个汉字</string>
+    <string name="inupt_id">请输入有效身份证号码</string>
+    <string name="home_city">定位城市</string>
+    <string name="student_lf">学习LF</string>
+    <string name="lfb">LF报</string>
+    <string name="hjlf">呼叫LF</string>
+    <string name="sblf">身边LF</string>
+    <string name="b">榜</string>
+    <string name="lflt">LF论坛</string>
+    <string name="data_auit_zjd">尊敬的</string>
+    <string name="data_auit_name">XXX</string>
+    <string name="data_auit_man">同志</string>
+    <string name="data_auit_women">女士</string>
+    <string name="data_auit_prompt">您的LF ID为</string>
+    <string name="net_error">网络访问错误，请稍后再试</string>
+    <string name="empty">还没有数据哦</string>
+    <string name="loading">请稍后...</string>
+    <string name="reload">重新尝试</string>
+    <string name="no_net">网络不可用,请检查你的网络</string>
+
 </resources>

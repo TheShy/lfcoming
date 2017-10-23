@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+
+    <include layout="@layout/back_title"/>
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="@dimen/btnsize_20"
+        android:layout_gravity="center"
+        android:src="@mipmap/logo"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="@dimen/btnsize_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/data_auit_zjd"
+            android:textSize="@dimen/txtsize_24"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/data_auit_name"
+            android:textSize="@dimen/txtsize_24"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/data_auit_man"
+            android:textSize="@dimen/txtsize_24"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/data_auit_prompt"
+            android:textSize="@dimen/txtsize_24"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="123456"
+        android:layout_margin="@dimen/btnsize_10"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/txtsize_25"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="@dimen/btnsize_10"
+        android:text="@string/choosing_num"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/txtsize_16"
+        android:layout_marginBottom="@dimen/btnsize_40"
+        />
+
+
+    <Button
+        android:id="@+id/data_audit_btn_shure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btnsize_48"
+        android:layout_margin="@dimen/btnsize_20"
+        android:background="@drawable/btn_corer_red"
+        android:gravity="center"
+        android:text="确  认"
+        android:textColor="@color/white"
+        android:textSize="@dimen/btnsize_24"
+        />
+</LinearLayout>

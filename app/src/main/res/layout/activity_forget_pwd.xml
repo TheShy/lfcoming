@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_color"
+              android:orientation="vertical">
+
+    <include layout="@layout/back_title"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btnsize_40"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/register_et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btnsize_44"
+            android:layout_margin="@dimen/btnsize_10"
+            android:layout_marginLeft="@dimen/btnsize_20"
+            android:layout_marginRight="@dimen/btnsize_20"
+            android:background="@drawable/layout_corner"
+            android:ems="10"
+            android:hint="@string/input_phone"
+            android:inputType="phone"
+            android:paddingLeft="@dimen/btnsize_5"
+            android:singleLine="true"
+            android:textColorHint="@color/txt_bgm"
+            android:textSize="@dimen/txtsize_16"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btnsize_12"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/register_et_code"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btnsize_44"
+            android:layout_margin="@dimen/btnsize_10"
+            android:layout_marginLeft="@dimen/btnsize_20"
+            android:layout_marginRight="@dimen/btnsize_20"
+            android:layout_weight="1.5"
+            android:background="@drawable/layout_corner"
+            android:ems="10"
+            android:hint="@string/input_code"
+            android:inputType="text"
+            android:textColorHint="@color/txt_bgm"
+            android:textSize="@dimen/txtsize_16"/>
+
+        <Button
+            android:id="@+id/register_btn_getcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/btnsize_10"
+            android:layout_marginLeft="@dimen/btnsize_20"
+            android:layout_weight="1"
+            android:background="@drawable/btn_corer_pinkred"
+            android:text="@string/get_code"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize_18"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btnsize_12"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btnsize_44"
+            android:layout_margin="@dimen/btnsize_10"
+            android:layout_marginLeft="@dimen/btnsize_20"
+            android:layout_marginRight="@dimen/btnsize_20"
+            android:layout_weight="1.5"
+            android:background="@drawable/layout_corner"
+            android:ems="10"
+            android:hint="@string/input_pwd"
+            android:inputType="text"
+            android:textColorHint="@color/txt_bgm"
+            android:textSize="@dimen/txtsize_16"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/btnsize_12"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btnsize_44"
+            android:layout_margin="@dimen/btnsize_10"
+            android:layout_marginLeft="@dimen/btnsize_20"
+            android:layout_marginRight="@dimen/btnsize_20"
+            android:layout_weight="1.5"
+            android:background="@drawable/layout_corner"
+            android:ems="10"
+            android:hint="@string/input_again_pwd"
+            android:inputType="text"
+            android:textColorHint="@color/txt_bgm"
+            android:textSize="@dimen/txtsize_16"/>
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/forget_btn_shure"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="@dimen/btnsize_20"
+        android:layout_marginRight="@dimen/btnsize_20"
+        android:layout_margin="@dimen/btnsize_10"
+        android:background="@drawable/btn_corer_red"
+        android:text="@string/shure"
+
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>
+
+</LinearLayout>
