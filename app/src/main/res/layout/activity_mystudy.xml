@@ -2,11 +2,42 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:orientation="vertical"
+              android:foregroundGravity="bottom"
+              android:background="@color/main_color"
               android:layout_height="match_parent">
 
-    <com.amap.api.maps.MapView
-        android:id="@+id/map"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/btnsize_48" >
+
+
+    <Button
+        android:id="@+id/my_study_btn_city"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:text="城市"
+        android:background="@null"
+        android:textColor="@color/white"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:text="我学雷锋"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/my_study_iv_skills"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentRight="true"
+        android:padding="15dp"
+        android:src="@mipmap/back" />
+</RelativeLayout>
 </LinearLayout>

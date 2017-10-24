@@ -1,75 +1,85 @@
 package com.zwtx.swing.lfcoming.MVP.Home.MyStudyLF;
 
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import android.content.Context;
+import android.content.Intent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 
-import com.amap.api.maps.AMap;
-import com.amap.api.maps.MapView;
+import com.zaaach.citypicker.CityPickerActivity;
+import com.zwtx.swing.lfcoming.MVP.Base.BaseActivity;
 import com.zwtx.swing.lfcoming.R;
 
+import butterknife.BindView;
+
 /**
- * Created by Administrator on 2017/10/20/020.
+ * 我学雷锋
  */
 
-public class MyStudyLFActivity extends AppCompatActivity {
+public class MyStudyLFActivity extends BaseActivity {
 
-    private MapView mapView;
-    private AMap aMap;
+
+    @BindView(R.id.my_study_btn_city)
+    Button btn_city;
+
+    @BindView(R.id.my_study_iv_skills)
+    ImageView iv_skills;
+    private static final int REQUEST_CODE_PICK_CITY = 0;//启动
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void loadViewLayout() {
         setContentView(R.layout.activity_mystudy);
 
-        mapView = (MapView) findViewById(R.id.map);
-        mapView.onCreate(savedInstanceState);// 此方法必须重写
+    }
 
-        init();
+    @Override
+    protected void findViewById() {
+        iv_skills = (ImageView) findViewById(R.id.my_study_iv_skills);
+        btn_city = (Button) findViewById(R.id.my_study_btn_city);
+    }
+
+    @Override
+    protected void setListener() {
+        iv_skills.setOnClickListener(this);
+        btn_city.setOnClickListener(this);
 
     }
 
+    @Override
+    protected void processLogic() {
 
+    }
 
-    private void init(){
-        if (aMap == null) {
-            aMap = mapView.getMap();
+    @Override
+    protected Context getActivityContext() {
+        return null;
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent mIntent = null;
+        switch (v.getId()) {
+            case R.id.my_study_btn_city:
+                startActivityForResult(new Intent(this, CityPickerActivity.class),
+                        REQUEST_CODE_PICK_CITY);
+                break;
+
+            case R.id.my_study_iv_skills:
+                mIntent = new Intent(this, MySkillActivity.class);
+                startActivity(mIntent);
+                break;
         }
+
+    }
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == REQUEST_CODE_PICK_CITY && resultCode == RESULT_OK) {
+            if (data != null) {
+                String city = data.getStringExtra(CityPickerActivity.KEY_PICKED_CITY);
+                btn_city.setText(  city);
+            }
+        }
+
     }
 
-    /**
-     * 方法必须重写
-     */
-    @Override
-    protected void onResume() {
-        super.onResume();
-        mapView.onResume();
-    }
-
-    /**
-     * 方法必须重写
-     */
-    @Override
-    protected void onPause() {
-        super.onPause();
-        mapView.onPause();
-    }
-
-    /**
-     * 方法必须重写
-     */
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        mapView.onSaveInstanceState(outState);
-    }
-
-    /**
-     * 方法必须重写
-     */
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        mapView.onDestroy();
-    }
 }

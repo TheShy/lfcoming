@@ -8,6 +8,8 @@
     <string name="input_phone">请输入您的手机号</string>
     <string name="input_pwd">请输入您的密码</string>
     <string name="become_lf">成为LF</string>
+    <string name="chus_num_lf">选择LF号</string>
+    <string name="my_skills">我的技能</string>
     <string name="forget_pwd">忘记密码</string>
     <string name="login">登录</string>
     <string name="third_party_login">第三方登录</string>
@@ -23,6 +25,8 @@
     <string name="sex">性别</string>
     <string name="man">男</string>
     <string name="women">女</string>
+    <string name="like">爱好</string>
+    <string name="benling">本领</string>
     <string name="id">身份证</string>
     <string name="adress">地址</string>
     <string name="input_adress">请输入有效的地址</string>
@@ -53,5 +57,9 @@
     <string name="loading">请稍后...</string>
     <string name="reload">重新尝试</string>
     <string name="no_net">网络不可用,请检查你的网络</string>
-
+    <!--头像设置-->
+    <string name="my_set_choose_operate" translatable="false">请选择操作</string>
+    <string name="my_set_album" translatable="false">相册</string>
+    <string name="my_set_photo" translatable="false">头像设置</string>
+    <string name="my_photo" translatable="false">拍照</string>
 </resources>

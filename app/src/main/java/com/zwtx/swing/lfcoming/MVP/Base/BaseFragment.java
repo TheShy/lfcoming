@@ -23,8 +23,8 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        initListener();
         initData();
+        initListener();
     }
 
     protected abstract View initView(LayoutInflater inflater, ViewGroup container);

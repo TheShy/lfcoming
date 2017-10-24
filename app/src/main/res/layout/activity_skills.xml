@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:foregroundGravity="bottom"
+              android:background="@color/main_color"
+              android:layout_height="match_parent">
+
+
+    <include layout="@layout/back_title"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="@dimen/btnsize_33"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_width="1dp"
+        android:layout_gravity="center"
+        app:civ_border_color="@color/white"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="@dimen/btnsize_10"
+        android:layout_marginLeft="@dimen/btnsize_20"
+        android:layout_marginRight="@dimen/btnsize_20"
+        android:background="@drawable/layout_corner"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/btnsize_10"
+            android:text="@string/name"
+            android:gravity="center"
+            android:textColor="@color/black"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/btnsize_10"
+            android:background="@null"
+            android:ems="10"
+            android:paddingLeft="@dimen/btnsize_5"
+            android:singleLine="true"
+            android:textColorHint="@color/text_color_qianhui"
+            android:textSize="@dimen/txtsize_16"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="@dimen/btnsize_10"
+        android:layout_marginLeft="@dimen/btnsize_20"
+        android:layout_marginRight="@dimen/btnsize_20"
+        android:background="@drawable/layout_corner"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/btnsize_10"
+            android:text="职业"
+            android:gravity="center"
+            android:textColor="@color/black"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/btnsize_10"
+            android:background="@null"
+            android:ems="10"
+            android:paddingLeft="@dimen/btnsize_5"
+            android:singleLine="true"
+            android:textColorHint="@color/text_color_qianhui"
+            android:textSize="@dimen/txtsize_16"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="@dimen/btnsize_10"
+        android:layout_marginLeft="@dimen/btnsize_20"
+        android:layout_marginRight="@dimen/btnsize_20"
+        android:background="@drawable/layout_corner"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/btnsize_10"
+            android:text="爱好"
+            android:gravity="center"
+            android:textColor="@color/black"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/btnsize_10"
+            android:background="@null"
+            android:ems="10"
+            android:paddingLeft="@dimen/btnsize_5"
+            android:singleLine="true"
+            android:textColorHint="@color/text_color_qianhui"
+            android:textSize="@dimen/txtsize_16"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="@dimen/btnsize_10"
+        android:layout_marginLeft="@dimen/btnsize_20"
+        android:layout_marginRight="@dimen/btnsize_20"
+        android:background="@drawable/layout_corner"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/btnsize_10"
+            android:text="本领"
+            android:gravity="center"
+            android:textColor="@color/black"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/btnsize_10"
+            android:background="@null"
+            android:ems="10"
+            android:paddingLeft="@dimen/btnsize_5"
+            android:singleLine="true"
+            android:textColorHint="@color/text_color_qianhui"
+            android:textSize="@dimen/txtsize_16"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_marginLeft="@dimen/btnsize_20"
+        android:layout_marginRight="@dimen/btnsize_20"
+        android:orientation="horizontal">
+
+
+
+        <Button
+            android:id="@+id/my_study_btn_recost"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="重置"
+            android:background="@drawable/btn_corer_red"
+
+            />
+        <View
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            />
+        <Button
+            android:id="@+id/my_study_btn_finsh"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_context"
+            android:text="完成"
+            android:background="@drawable/btn_corer_red"
+
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -8,6 +8,7 @@
     <color name="get_code_bgm">#ff7979</color>
     <color name="main_line_red">#c80b0b</color>
     <color name="gray_red">#b53737</color>
+    <color name="btn_gray_red">#ce3e3e</color>
 
     <color name="white_alpha_half">#99FFFFFF</color>
     <color name="gray">#FFF0F0F0</color>

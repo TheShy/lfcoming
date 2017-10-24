@@ -12,7 +12,7 @@ import com.zwtx.swing.lfcoming.R;
 import butterknife.BindView;
 
 /**
- * Created by Administrator on 2017/10/21/021.
+ * 忘记密码
  */
 
 public class ForgetPwdActivity extends BaseActivity {

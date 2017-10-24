@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="@color/main_color"
+              android:orientation="vertical"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/back_title"/>
+
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/chus_et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/layout_corner"
+        android:layout_marginTop="@dimen/btnsize_40"
+        android:layout_marginLeft="@dimen/btnsize_20"
+        android:layout_marginRight="@dimen/btnsize_20"
+        android:hint="@string/input_phone"
+        android:paddingLeft="@dimen/btnsize_10"
+        />
+
+
+
+    <Button
+        android:id="@+id/chus_btn_become"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/btn_corer_red"
+        android:text="随机生成"
+        android:textColor="@color/white"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="@dimen/btnsize_20"
+        android:layout_marginRight="@dimen/btnsize_20"
+        />
+    <Button
+        android:id="@+id/chus_btn_shure"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/btn_corer_red"
+        android:text="确 认"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/btnsize_20"
+        android:layout_marginRight="@dimen/btnsize_20"
+        />
+</LinearLayout>

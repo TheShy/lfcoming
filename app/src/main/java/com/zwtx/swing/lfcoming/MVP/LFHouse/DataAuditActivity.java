@@ -11,7 +11,10 @@ import com.zwtx.swing.lfcoming.MVP.Base.BaseActivity;
 
 import butterknife.BindView;
 
-//资料审核页面
+/**
+ * 资料审核页面
+ */
+
 public class DataAuditActivity extends BaseActivity{
 
     @BindView(R.id.data_audit_btn_shure)

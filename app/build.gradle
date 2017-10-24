@@ -16,6 +16,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        debug {
+            //移除无用的resource文件 设置为true可能为导致闪退
+            shrinkResources false
+        }
     }
     //设置虚拟机堆内存空间大小，避免在编译期间OOM
     dexOptions {
@@ -51,10 +55,15 @@ dependencies {
     compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
     compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
     compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
+    //okHTTP
+    compile 'com.zhy:okhttputils:2.6.2'
     //友盟
     compile 'com.umeng.analytics:analytics:latest.integration'
     //轮播
     compile 'cn.bingoogolapple:bga-banner:2.1.7@aar'
     compile 'com.android.support:support-v4:25.1.0'
+    //圆角头像
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+
     testCompile 'junit:junit:4.12'
 }

@@ -42,6 +42,7 @@ public class LoginActivity extends BaseActivity {
     @BindView(R.id.login_iv_weibo)
     ImageView iv_weibo;
 
+
     @Override
     protected void loadViewLayout() {
         setContentView(R.layout.activitiy_login);
