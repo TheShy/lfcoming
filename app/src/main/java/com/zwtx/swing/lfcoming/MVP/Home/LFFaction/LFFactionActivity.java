@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,7 +34,7 @@ public class LFFactionActivity extends BaseActivity {
 
     private LayoutInflater mInflater;
     private List<String> mTitleList = new ArrayList<>();//页卡标题集合
-    private View view1, view2,view3;//页卡视图
+    private View view1, view2,view3,view4;//页卡视图
     private List<View> mViewList = new ArrayList<>();//页卡视图集合
 
     @Override
@@ -61,6 +62,8 @@ public class LFFactionActivity extends BaseActivity {
         view1 = mInflater.inflate(R.layout.home_vp, null);
         view2 = mInflater.inflate(R.layout.home_vp, null);
         view3 = mInflater.inflate(R.layout.home_vp,null);
+        view4 = mInflater.inflate(R.layout.home_vp,null);
+
 
         Button btn_faction = view1.findViewById(R.id.btn_faction);
         btn_faction.setOnClickListener(new View.OnClickListener() {
@@ -70,6 +73,10 @@ public class LFFactionActivity extends BaseActivity {
                 startActivity(mIntent);
             }
         });
+
+        RecyclerView mRecyclerView = view1.findViewById(R.id.home_recycler_hot);
+
+
         mViewList.add(view1);
         mViewList.add(view2);
         mViewList.add(view3);
@@ -77,10 +84,13 @@ public class LFFactionActivity extends BaseActivity {
         mTitleList.add("我的雷锋帮");
         mTitleList.add("雷锋帮");
         mTitleList.add("雷锋社区");
+        mTitleList.add("雷锋校园");
 
         mTabLayout.addTab(mTabLayout.newTab().setText(mTitleList.get(0)));//添加tab选项卡
         mTabLayout.addTab(mTabLayout.newTab().setText(mTitleList.get(1)));
         mTabLayout.addTab(mTabLayout.newTab().setText(mTitleList.get(2)));
+        mTabLayout.addTab(mTabLayout.newTab().setText(mTitleList.get(3)));
+
 
         mTabLayout.setTabMode(TabLayout.MODE_FIXED);//设置tab模式，当前为系统默认模式
         MyPagerAdapter mAdapter = new MyPagerAdapter(mViewList);
@@ -90,26 +100,12 @@ public class LFFactionActivity extends BaseActivity {
 
     }
 
-    @Override
-    protected Context getActivityContext() {
-        return null;
-    }
-
-    @Override
-    public void onClick(View v) {
-
-
-
-    }
-
     //ViewPager适配器
     class MyPagerAdapter extends PagerAdapter {
         private List<View> mViewList;
 
         public MyPagerAdapter(List<View> mViewList) {
             this.mViewList = mViewList;
-
-
         }
 
         @Override
@@ -139,4 +135,16 @@ public class LFFactionActivity extends BaseActivity {
         }
 
     }
+
+    @Override
+    protected Context getActivityContext() {
+        return null;
+    }
+
+    @Override
+    public void onClick(View v) {
+
+
+    }
+
 }

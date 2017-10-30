@@ -134,6 +134,8 @@
         <activity android:name=".MVP.Home.LFFaction.JoinFactionActivity"/>
         <activity android:name=".MVP.Home.LFFaction.SendServiceActivity"/>
         <activity android:name=".MVP.Home.LFFaction.ServiceDetailsActivity"/>
+        <activity android:name=".MVP.Home.LFFaction.StartFactionActivity"/>
+
 
 
     </application>

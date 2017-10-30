@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -39,6 +40,9 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     @BindView(R.id.hoem_heard_tv_call)
     TextView tv_call;
 
+    @BindView(R.id.home_lf_iv_bang)
+    ImageView iv_bang;
+
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         return inflater.inflate(R.layout.fragment_home, container, false);
@@ -51,6 +55,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         tv_lfb.setOnClickListener(this);
         layout_call.setOnClickListener(this);
         tv_call.setOnClickListener(this);
+        iv_bang.setOnClickListener(this);
     }
 
     @Override
@@ -60,6 +65,8 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         tv_lfb=getActivity().findViewById(R.id.home_tv_lfb);
         layout_call=getActivity().findViewById(R.id.home_heard_layout_call);
         tv_call=getActivity().findViewById(R.id.hoem_heard_tv_call);
+        iv_bang=getActivity().findViewById(R.id.home_lf_iv_bang);
+
         mBanner=getActivity().findViewById(R.id.home_banner);
         mBanner.setData(R.mipmap.vp_first,R.mipmap.vp_second,R.mipmap.vp_third);
 
@@ -91,21 +98,28 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     public void onClick(View v) {
         Intent mIntent =null;
         switch (v.getId()){
+            //城市定位
             case R.id.home_tv_city:
                 startActivityForResult(new Intent(getActivity(), CityPickerActivity.class),
                         REQUEST_CODE_PICK_CITY);
                 break;
+            //学习雷锋
             case R.id.home_tv_study_lf:
                 mIntent = new Intent(getActivity(), MyStudyLFActivity.class);
                 startActivity(mIntent);
                 break;
+            //雷锋帮
             case R.id.home_tv_lfb:
                 mIntent = new Intent(getActivity(), LFFactionActivity.class);
                 startActivity(mIntent);
                 break;
+            //呼叫雷锋
             case R.id.hoem_heard_tv_call:
                 mIntent = new Intent(getActivity(), CallLFActivity.class);
                 startActivity(mIntent);
+                break;
+            //雷锋榜
+            case R.id.home_lf_iv_bang:
                 break;
         }
     }
