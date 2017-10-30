@@ -80,11 +80,12 @@ public class LFFactionActivity extends BaseActivity {
         mViewList.add(view1);
         mViewList.add(view2);
         mViewList.add(view3);
+        mViewList.add(view4);
 
-        mTitleList.add("我的雷锋帮");
-        mTitleList.add("雷锋帮");
-        mTitleList.add("雷锋社区");
-        mTitleList.add("雷锋校园");
+        mTitleList.add("我的LF帮");
+        mTitleList.add("LF帮");
+        mTitleList.add("LF社区");
+        mTitleList.add("LF校园");
 
         mTabLayout.addTab(mTabLayout.newTab().setText(mTitleList.get(0)));//添加tab选项卡
         mTabLayout.addTab(mTabLayout.newTab().setText(mTitleList.get(1)));
