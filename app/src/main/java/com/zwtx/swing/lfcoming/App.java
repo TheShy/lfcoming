@@ -1,4 +1,4 @@
-package com.zwtx.swing.lfcoming.APP;
+package com.zwtx.swing.lfcoming;
 
 import android.app.Activity;
 import android.app.Application;

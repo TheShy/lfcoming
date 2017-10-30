@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_line"
+        android:orientation="vertical">
+
+        <include layout="@layout/back_title"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="@dimen/btnsize_10"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:text="活动地点"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/btnsize_10"
+                android:layout_marginRight="@dimen/btnsize_10"
+                android:textSize="17sp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/layout_corner"
+                android:hint="请填写活动地点"
+                android:layout_marginRight="@dimen/btnsize_10"
+                android:paddingLeft="@dimen/btnsize_26"
+                android:textSize="@dimen/btnsize_14"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="@dimen/btnsize_10"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:text="活动时间"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/btnsize_10"
+                android:layout_marginRight="@dimen/btnsize_10"
+                android:textSize="17sp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/layout_corner"
+                android:hint="请填写活动名称"
+                android:layout_marginRight="@dimen/btnsize_10"
+                android:paddingLeft="@dimen/btnsize_26"
+                android:textSize="@dimen/btnsize_14"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="@dimen/btnsize_10"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:text="选择班团"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/btnsize_10"
+                android:layout_marginRight="@dimen/btnsize_10"
+                android:textSize="17sp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/layout_corner"
+                android:hint="选择棒团"
+                android:layout_marginRight="@dimen/btnsize_10"
+                android:paddingLeft="@dimen/btnsize_26"
+                android:textSize="@dimen/btnsize_14"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="@dimen/btnsize_10"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:text="参加人数"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/btnsize_10"
+                android:layout_marginRight="@dimen/btnsize_10"
+                android:textSize="17sp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/layout_corner"
+                android:hint="最多允许500人"
+                android:layout_marginRight="@dimen/btnsize_10"
+                android:paddingLeft="@dimen/btnsize_26"
+                android:textSize="@dimen/btnsize_14"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="@dimen/btnsize_10"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:text="联系方式"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/btnsize_10"
+                android:layout_marginRight="@dimen/btnsize_10"
+                android:textSize="17sp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/layout_corner"
+                android:hint="请填写联系电话"
+                android:layout_marginRight="@dimen/btnsize_10"
+                android:paddingLeft="@dimen/btnsize_26"
+                android:textSize="@dimen/btnsize_14"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_margin="@dimen/btnsize_10"
+            android:background="@color/white"
+            android:hint="活动介绍"
+            android:textColor="@color/gray_line"
+            android:textSize="@dimen/btnsize_23"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/service_btn_shure"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/shure"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/btnsize_10"
+            android:background="@color/btn_bgm"
+            />
+
+    </LinearLayout>
+</LinearLayout>

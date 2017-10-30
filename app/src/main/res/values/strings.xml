@@ -10,6 +10,8 @@
     <string name="become_lf">成为LF</string>
     <string name="chus_num_lf">选择LF号</string>
     <string name="my_skills">我的技能</string>
+    <string name="my_faction">我的LF帮</string>
+    <string name="my_factions">我的帮派</string>
     <string name="forget_pwd">忘记密码</string>
     <string name="login">登录</string>
     <string name="third_party_login">第三方登录</string>
@@ -18,7 +20,7 @@
     <string name="get_code">获取验证码</string>
     <string name="input_again_pwd">请再次输入密码</string>
     <string name="again_shure">再次确认</string>
-
+    <string name="setting_pwd">设置密码</string>
     <string name="shure">确认</string>
     <string name="real_name">实名认证</string>
     <string name="name">姓名</string>
@@ -29,20 +31,28 @@
     <string name="benling">本领</string>
     <string name="id">身份证</string>
     <string name="adress">地址</string>
-    <string name="input_adress">请输入有效的地址</string>
+    <string name="share">分享</string>
+    <string name="share_contents">来自 LF来了 的分享：%1$s %2$s</string>
 
+    <string name="input_adress">请输入有效的地址</string>
     <string name="phone">手机</string>
     <string name="pwd_setting">密码设置</string>
     <string name="data_audit_pass">资料审核通过</string>
     <string name="data_audit_nopass">资料未核通过</string>
-    <string name="choosing_num">请珍惜唯一的雷锋号</string>
+    <string name="choosing_num">请珍惜唯一的LF号</string>
     <string name="choosing_btn_comit_num">确认号码</string>
 
     <string name="input_two_ten_num">2-10个汉字</string>
     <string name="inupt_id">请输入有效身份证号码</string>
     <string name="home_city">定位城市</string>
+    <string name="beijing">北京</string>
+    <string name="china">全国</string>
+    <string name="must_help">紧急帮助</string>
+    <string name="home_help">水龙头坏了！急需帮助！</string>
     <string name="student_lf">学习LF</string>
-    <string name="lfb">LF报</string>
+    <string name="lfb">LF帮</string>
+    <string name="service_detal">活动详情</string>
+    <string name="send_service">发布活动</string>
     <string name="hjlf">呼叫LF</string>
     <string name="sblf">身边LF</string>
     <string name="b">榜</string>

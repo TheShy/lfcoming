@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.zwtx.swing.lfcoming.R;
-import com.zwtx.swing.lfcoming.APP.MyApplication;
+import com.zwtx.swing.lfcoming.MyApplication;
 
 
 public class MyDialogHint extends Dialog implements View.OnClickListener{

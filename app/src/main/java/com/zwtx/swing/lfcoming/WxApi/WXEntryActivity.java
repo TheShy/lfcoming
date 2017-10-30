@@ -1,13 +1,10 @@
-package com.zwtx.swing.lfcoming.WxApi;
+package com.zwtx.swing.lfcoming.wxapi;
 
-/**
- * Created by Administrator on 2017/10/20/020.
- */
+
+import com.umeng.weixin.callback.WXCallbackActivity;
+
 
 public class WXEntryActivity extends WXCallbackActivity {
-
-
-
 
 
 

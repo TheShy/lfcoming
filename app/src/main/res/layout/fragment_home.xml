@@ -2,56 +2,16 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:background="@color/main_color"
-        >
+    <include layout="@layout/home_heard"/>
 
-        <Button
-            android:id="@+id/home_bnt_city"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_alignParentLeft="true"
-            android:layout_centerInParent="true"
-            android:background="@null"
-            android:gravity="center_vertical"
-            android:text="北京"
-            android:textColor="@color/white"
-            android:layout_marginLeft="@dimen/btnsize_20"
-            android:textSize="@dimen/btnsize_20"
-
-            />
-
-        <ImageView
-            android:layout_width="39.4dp"
-            android:layout_height="38dp"
-            android:layout_centerInParent="true"
-            android:layout_marginRight="@dimen/btnsize_20"
-            android:layout_alignParentRight="true"
-            android:src="@mipmap/ic_launcher"
-            />
-
-    </RelativeLayout>
-
-    <cn.bingoogolapple.bgabanner.BGABanner
-        android:id="@+id/home_banner"
-        style="@style/MatchMatch"
-        app:banner_indicatorGravity="bottom"
-        app:banner_pageChangeDuration="1000"
-        app:banner_pointAutoPlayAble="true"
-        app:banner_pointAutoPlayInterval="1000"
-        app:banner_pointContainerBackground="@android:color/transparent"
-        app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
-        app:banner_pointTopBottomMargin="5dp"
-        app:banner_transitionEffect="alpha"/>
-
-<include layout="@layout/home_framlayout"/>
+    <include layout="@layout/home_bottom"/>
 
 
 </LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:id="@+id/home_layout_heard"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_height="563dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/home_title_bgm" >
+
+        <TextView
+            android:id="@+id/home_tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/btnsize_20"
+            android:drawableRight="@mipmap/home_iv_city"
+            android:gravity="center_vertical"
+            android:text="北京 "
+            android:textColor="@color/white"
+            android:textSize="@dimen/btnsize_18"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/btnsize_20"
+            android:src="@mipmap/home_iv_search"
+            />
+
+    </RelativeLayout>
+
+    <cn.bingoogolapple.bgabanner.BGABanner
+        android:id="@+id/home_banner"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:banner_indicatorGravity="bottom"
+        app:banner_pageChangeDuration="1000"
+        app:banner_pointAutoPlayAble="true"
+        app:banner_pointAutoPlayInterval="1000"
+        app:banner_pointContainerBackground="@android:color/transparent"
+        app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+        app:banner_pointTopBottomMargin="5dp"
+        app:banner_transitionEffect="alpha"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="@dimen/btnsize_10"
+        android:background="@drawable/layout_corner"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="@dimen/btnsize_5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="自己活着，就是为了别人更好的活着。"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:text="-雷锋"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/btnsize_20"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/home_tv_study_lf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="学习LF"
+                android:textColor="@color/txt_gray"
+                android:drawableTop="@mipmap/qq"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/btnsize_20"
+            android:layout_marginRight="@dimen/btnsize_20"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="身边LF"
+                android:gravity="center"
+                android:textColor="@color/txt_gray"
+                android:drawableTop="@mipmap/weibo"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LF帮"
+                android:id="@+id/home_tv_lfb"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/btnsize_40"
+                android:textColor="@color/txt_gray"
+                android:drawableTop="@mipmap/qq"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/btnsize_40"
+                android:gravity="center"
+                android:src="@mipmap/logo"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/home_heard_layout_call"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/btnsize_20"
+            android:layout_marginBottom="@dimen/btnsize_20"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hjlf"
+                android:id="@+id/hoem_heard_tv_call"
+                android:gravity="center"
+                android:textColor="@color/txt_gray"
+                android:drawableTop="@mipmap/wechat"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/home_heard_layout_studyt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/btnsize_20"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LF论坛"
+                android:gravity="center"
+                android:textColor="@color/txt_gray"
+                android:drawableTop="@mipmap/weibo"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 
-import com.zwtx.swing.lfcoming.APP.App;
+import com.zwtx.swing.lfcoming.App;
 
 
 /**
@@ -12,7 +12,7 @@ import com.zwtx.swing.lfcoming.APP.App;
  */
 public class FoPreference
 {
-    private static String share_name = "mianlegedan_share";
+    private static String share_name = "lfcoming";
 
     public static SharedPreferences getPreference()
     {

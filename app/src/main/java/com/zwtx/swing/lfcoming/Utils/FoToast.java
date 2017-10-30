@@ -3,7 +3,7 @@ package com.zwtx.swing.lfcoming.Utils;
 import android.content.Context;
 import android.widget.Toast;
 
-import com.zwtx.swing.lfcoming.APP.MyApplication;
+import com.zwtx.swing.lfcoming.MyApplication;
 
 
 /**

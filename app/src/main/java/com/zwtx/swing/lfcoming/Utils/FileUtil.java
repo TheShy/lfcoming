@@ -2,7 +2,7 @@ package com.zwtx.swing.lfcoming.Utils;
 
 import android.util.Log;
 
-import com.zwtx.swing.lfcoming.APP.MyApplication;
+import com.zwtx.swing.lfcoming.MyApplication;
 
 import java.io.File;
 

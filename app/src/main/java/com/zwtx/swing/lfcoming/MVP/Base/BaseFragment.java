@@ -26,7 +26,6 @@ public abstract class BaseFragment extends Fragment {
         initData();
         initListener();
     }
-
     protected abstract View initView(LayoutInflater inflater, ViewGroup container);
     protected abstract void initListener();
     protected abstract void initData();

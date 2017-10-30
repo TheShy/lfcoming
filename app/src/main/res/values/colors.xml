@@ -4,14 +4,17 @@
     <color name="main_color">#e45858</color>
     <color name="btn_bgm">#ce3e3e</color>
     <color name="line_bgm">#f0a3a3</color>
+    <color name="title_bgm">#B01E21</color>
+    <color name="home_title_bgm">#B01E21</color>
     <color name="txt_bgm">#ccc</color>
     <color name="get_code_bgm">#ff7979</color>
     <color name="main_line_red">#c80b0b</color>
     <color name="gray_red">#b53737</color>
     <color name="btn_gray_red">#ce3e3e</color>
-
     <color name="white_alpha_half">#99FFFFFF</color>
     <color name="gray">#FFF0F0F0</color>
+    <color name="test">#999999</color>
+    <color name="gray_line">#CCCCCC</color>
     <color name="gray_deep">#c9000000</color>
     <color name="transparent">#00000000</color>
     <color name="role_right_gray">#929292</color>
@@ -31,6 +34,8 @@
     <color name="window_gray">#f4f4f4</color>
     <color name="white">#FFF</color>
     <color name="black">#000</color>
+
+    <color name="home_bgm_gray">#F5F5F5</color>
     <color name="txt_gray">#999999</color>
     <color name="text_color_context">#666666</color><!-- 字体颜色  标题灰色 -->
     <color name="text_color_qianhui">#999999</color><!-- 字体颜色  标题灰色 -->

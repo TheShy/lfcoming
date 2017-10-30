@@ -1,7 +1,11 @@
-package com.zwtx.swing.lfcoming.APP;
+package com.zwtx.swing.lfcoming;
 
 import android.app.Activity;
 import android.app.Application;
+
+import com.umeng.socialize.Config;
+import com.umeng.socialize.PlatformConfig;
+import com.umeng.socialize.UMShareAPI;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +17,7 @@ import java.util.List;
  *  */
 
 public class MyApplication extends Application {
+
     //记录当前栈里所有activity
     private List<Activity> activities = new ArrayList<Activity>();
     //记录需要一次性关闭的页面
@@ -20,36 +25,22 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        UMShareAPI.get(this);//初始化sdk
+        //开启debug模式，方便定位错误，具体错误检查方式可以查看http://dev.umeng.com/social/android/quick-integration的报错必看，正式发布，请关闭该模式
+        Config.DEBUG= true;
         instance = this;
-
-//        //异常友好管理初始化
-//        Recovery.getInstance()
-//                .debug(true)
-//                .recoverInBackground(false)
-//                .recoverStack(true)
-//                .mainPage(WelcomeActivity.class)
-//                .skip(H5PayActivity.class)  如果应用集成支付宝支付 记得加上这句代码  没时间解释了  快上车  老司机发车了
-//                .init(this);
-//
-//
-//        //文件下载管理初始化
-//        FileDownloader.init(getApplicationContext(),
-//                new FileDownloadHelper.OkHttpClientCustomMaker() { // is not has to provide.
-//                    @Override
-//                    public OkHttpClient customMake() {
-//                        // just for OkHttpClient customize.
-//                        final OkHttpClient.Builder builder = new OkHttpClient.Builder();
-//                        // you can set the connection timeout.
-//                        builder.connectTimeout(15_000, TimeUnit.MILLISECONDS);
-//                        // you can set the HTTP proxy.
-//                        builder.proxy(Proxy.NO_PROXY);
-//                        // etc.
-//                        return builder.build();
-//                    }
-//                });
-//        //初始化下载管理
-//        TasksManager.init();
     }
+
+
+    {
+        //微信
+        PlatformConfig.setWeixin("wxdc1e388c3822c80b", "3baf1193c85774b3fd9d18447d76cab0");
+        //新浪微博(第三个参数为回调地址)
+        PlatformConfig.setSinaWeibo("3921700954", "04b48b094faeb16683c32669824ebdad","http://sns.whalecloud.com/sina2/callback");
+        //QQ
+        PlatformConfig.setQQZone("1106423011", "DEChiRTNkT85MSna");
+    }
+
     /**
      * 应用实例
      **/

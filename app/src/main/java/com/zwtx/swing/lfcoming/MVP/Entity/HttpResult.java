@@ -5,22 +5,22 @@ package com.zwtx.swing.lfcoming.MVP.Entity;
  */
 
 public class HttpResult<T> {
-    public String requestTime;
+    public String msg;
     public int code;
     public T data;
 
-    public HttpResult(String requestTime, int code, T data) {
-        this.requestTime = requestTime;
+    public HttpResult(String msg, int code, T data) {
+        this.msg = msg;
         this.code = code;
         this.data = data;
     }
 
-    public String getRequestTime() {
-        return requestTime;
+    public String getMsg() {
+        return msg;
     }
 
-    public void setRequestTime(String requestTime) {
-        this.requestTime = requestTime;
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 
     public int getCode() {

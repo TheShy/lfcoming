@@ -14,6 +14,7 @@ import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.zwtx.swing.lfcoming.MyApplication;
 import com.zwtx.swing.lfcoming.R;
 
 import butterknife.ButterKnife;
@@ -35,9 +36,9 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
         initView();
         ButterKnife.bind(this);
         initdata();
-//        MyApplication.getInstance().addActivity(this);
-    }
+        MyApplication.getInstance().addActivity(this);
 
+    }
     private void initView() {
         loadViewLayout();
 
