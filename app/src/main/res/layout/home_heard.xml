@@ -7,35 +7,6 @@
               android:layout_height="563dp">
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:background="@color/home_title_bgm" >
-
-        <TextView
-            android:id="@+id/home_tv_city"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_alignParentLeft="true"
-            android:layout_centerInParent="true"
-            android:layout_marginLeft="@dimen/btnsize_20"
-            android:drawableRight="@mipmap/home_iv_city"
-            android:gravity="center_vertical"
-            android:text="北京 "
-            android:textColor="@color/white"
-            android:textSize="@dimen/btnsize_18"
-            />
-
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerInParent="true"
-            android:layout_marginRight="@dimen/btnsize_20"
-            android:src="@mipmap/home_iv_search"
-            />
-
-    </RelativeLayout>
 
     <cn.bingoogolapple.bgabanner.BGABanner
         android:id="@+id/home_banner"
@@ -136,7 +107,7 @@
                 android:drawableTop="@mipmap/qq"
                 />
             <ImageView
-                android:id="@+id/home_lf_iv_bang"
+                android:id="@+id/home_iv_lf_bd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/btnsize_40"

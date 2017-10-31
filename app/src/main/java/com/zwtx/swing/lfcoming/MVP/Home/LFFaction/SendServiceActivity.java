@@ -4,7 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
+import com.zwtx.swing.lfcoming.Dialog.EditDialog;
 import com.zwtx.swing.lfcoming.Dialog.ServiceDialog;
 import com.zwtx.swing.lfcoming.MVP.Base.BaseActivity;
 import com.zwtx.swing.lfcoming.R;
@@ -21,22 +23,25 @@ public class SendServiceActivity extends BaseActivity {
     @BindView(R.id.service_btn_shure)
     Button btn_service;
 
+    @BindView(R.id.service_iv_back)
+    ImageView iv_back;
+
     @Override
     protected void loadViewLayout() {
+
     setContentView(R.layout.activity_service);
     }
 
     @Override
     protected void findViewById() {
         btn_service = (Button) findViewById(R.id.service_btn_shure);
-
+        iv_back= (ImageView) findViewById(R.id.service_iv_back);
     }
 
     @Override
     protected void setListener() {
         btn_service.setOnClickListener(this);
-        setTitleLeftBtn();
-        setTitleName(R.string.send_service);
+        iv_back.setOnClickListener(this);
     }
 
     @Override
@@ -54,8 +59,10 @@ public class SendServiceActivity extends BaseActivity {
         Intent mIntent = null;
         switch (v.getId()){
             case R.id.service_btn_shure:
-//                finish();
                 new ServiceDialog(this, R.style.MyDialog1).show();
+                break;
+            case R.id.service_iv_back:
+                new EditDialog(this,R.style.MyDialog1).show();
                 break;
         }
 

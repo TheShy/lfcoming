@@ -114,6 +114,7 @@
         />
     </LinearLayout>
 
+
     <ListView
         android:id="@+id/lv"
         android:layout_width="match_parent"
@@ -121,7 +122,6 @@
         android:background="@color/white"
         android:divider="@color/gray"
         android:dividerHeight="0.8dp"
-        android:fastScrollEnabled="true"
-        >
+        android:fastScrollEnabled="true">
     </ListView>
 </LinearLayout>

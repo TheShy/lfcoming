@@ -3,14 +3,37 @@
               android:layout_width="match_parent"
               android:orientation="vertical"
               android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/main_color">
 
+
+        <ImageView
+            android:id="@+id/service_iv_back"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:src="@mipmap/back"/>
+
+        <TextView
+            android:id="@+id/service_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="发布活动"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+
+    </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/gray_line"
+        android:background="#ECECEC"
         android:orientation="vertical">
 
-        <include layout="@layout/back_title"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,7 +44,7 @@
             <TextView
                 android:layout_width="71dp"
                 android:layout_height="match_parent"
-                android:text="活动地点"
+                android:text="活动名称"
                 android:gravity="center"
                 android:layout_marginLeft="@dimen/btnsize_10"
                 android:layout_marginRight="@dimen/btnsize_10"
@@ -53,12 +76,13 @@
                 android:layout_marginRight="@dimen/btnsize_10"
                 android:textSize="17sp"
                 />
-            <EditText
+            <TextView
+                android:id="@+id/service_tv_city"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/layout_corner"
-                android:hint="请填写活动名称"
-                android:layout_marginRight="@dimen/btnsize_10"
+                android:text="活动地点"
+                android:gravity="center_vertical"
                 android:paddingLeft="@dimen/btnsize_26"
                 android:textSize="@dimen/btnsize_14"
                 />

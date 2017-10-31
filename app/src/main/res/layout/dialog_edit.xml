@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center">
 
     <LinearLayout
-        android:layout_width="250dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="@drawable/dialog_bj_hint" >
@@ -19,17 +19,13 @@
             android:gravity="center">
             <TextView
                 style="@style/TextStyle_context"
-                android:id="@+id/dialog_hint_text_context"
-                android:layout_width="wrap_content"
+                android:id="@+id/edit_tv_title"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
                 android:lineSpacingMultiplier="1.3"
-                android:text="真的要离开我吗?" />
+                android:text="退出此次编辑" />
         </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/window_gray"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -37,29 +33,27 @@
             android:gravity="center">
             <TextView
                 style="@style/TextStyle_context"
-                android:id="@+id/dialoh_hint_text_no"
+                android:id="@+id/edit_tv_cancle"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-               android:padding="10dp"
+                android:padding="10dp"
                 android:text="取消"
                 android:gravity="center"
                 android:clickable="true"
                 />
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="@color/window_gray"/>
             <TextView
                 style="@style/TextStyle_context"
-                android:id="@+id/dialog_hint_text_yes"
+                android:id="@+id/edit_tv_finsh"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="确定"
+                android:textColor="#B01E21"
+                android:text="退出"
                 android:clickable="true" />
         </LinearLayout>
     </LinearLayout>
+
 </LinearLayout>
