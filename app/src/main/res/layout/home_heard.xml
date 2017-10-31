@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:text="自己活着，就是为了别人更好的活着。"
-
+            android:textColor="@color/txt_gray"
             />
 
         <TextView
@@ -44,6 +44,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical|right"
             android:text="-雷锋"
+            android:textColor="@color/txt_gray"
             />
 
     </LinearLayout>
