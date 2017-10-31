@@ -25,6 +25,9 @@ public class MySkillActivity extends BaseActivity {
         setContentView(R.layout.activity_skills);
 
 
+
+
+
     }
 
     @Override

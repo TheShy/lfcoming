@@ -1,8 +1,12 @@
 package com.zwtx.swing.lfcoming.Data.Retrofit;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
 /*
  *okHttp的配置
@@ -29,4 +33,18 @@ public class OkHttp3Utils {
 
         return mOkHttpClient;
     }
+    /**
+     * 云端响应头拦截器
+     * 用于添加统一请求头  请按照自己的需求添加
+     * 主要用于加密传输 和设备数据传输
+     */
+    private static final Interceptor mTokenInterceptor = new Interceptor() {
+        @Override public Response intercept(Chain chain) throws IOException {
+            Request originalRequest = chain.request();
+            Request authorised = originalRequest.newBuilder()
+                    .header("FromSource", "1.0")
+                    .build();
+            return chain.proceed(authorised);
+        }
+    };
 }

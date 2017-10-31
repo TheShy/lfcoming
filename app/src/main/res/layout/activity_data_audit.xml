@@ -10,13 +10,13 @@
 
 
     <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_margin="@dimen/btnsize_20"
         android:layout_gravity="center"
-        android:src="@mipmap/logo"
+        android:layout_margin="@dimen/btnsize_20"
 
-        />
+        android:src="@mipmap/logo"/>
 
 
     <LinearLayout
