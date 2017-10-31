@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <include layout="@layout/back_title"/>
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/real_iv_heard"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/btnsize_20"
+            android:src="@mipmap/logo"
+            app:civ_border_color="@color/role_yellow_gray"
+            app:civ_border_width="1dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="@dimen/btnsize_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/btnsize_10"
+                android:layout_marginRight="@dimen/btnsize_10"
+                android:gravity="center"
+                android:text="团队名称"
+                android:textSize="17sp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/btnsize_10"
+                android:background="@drawable/layout_corner"
+                android:hint="请填写团队名称"
+                android:paddingLeft="@dimen/btnsize_26"
+                android:textSize="@dimen/btnsize_14"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="@dimen/btnsize_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/btnsize_10"
+                android:layout_marginRight="@dimen/btnsize_10"
+                android:gravity="center"
+                android:text="团体类型"
+                android:textSize="17sp"
+                />
+
+            <MultiAutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/btnsize_10"
+                android:background="@drawable/layout_corner"
+                android:hint="团体类型"
+                android:paddingLeft="@dimen/btnsize_26"
+                android:textSize="@dimen/btnsize_14"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="@dimen/btnsize_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/btnsize_10"
+                android:layout_marginRight="@dimen/btnsize_10"
+                android:gravity="center"
+                android:text="团体人数"
+                android:textSize="17sp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/btnsize_10"
+                android:background="@drawable/layout_corner"
+                android:hint="请输入团队人数"
+                android:paddingLeft="@dimen/btnsize_26"
+                android:textSize="@dimen/btnsize_14"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="@dimen/btnsize_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/btnsize_10"
+                android:layout_marginRight="@dimen/btnsize_10"
+                android:gravity="center"
+                android:text="团体地区"
+                android:textSize="17sp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/btnsize_10"
+                android:background="@drawable/layout_corner"
+                android:hint="请选择团队地区"
+                android:paddingLeft="@dimen/btnsize_26"
+                android:textSize="@dimen/btnsize_14"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="@dimen/btnsize_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/btnsize_10"
+                android:layout_marginRight="@dimen/btnsize_10"
+                android:text="团队介绍"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginRight="@dimen/btnsize_10"
+            android:background="@drawable/layout_corner"
+            android:hint="请选择团队地区"
+            android:paddingLeft="@dimen/btnsize_26"
+            android:textSize="@dimen/btnsize_14"
+            />
+
+</LinearLayout>

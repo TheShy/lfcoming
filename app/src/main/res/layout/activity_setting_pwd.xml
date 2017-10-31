@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:background="@color/main_color"
+              android:layout_height="match_parent">
+
+
+
+    <include layout="@layout/back_title"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btnsize_48"
+        android:background="@drawable/layout_corner"
+        android:hint="请设置您的密码"
+        android:layout_marginTop="@dimen/btnsize_40"
+        android:layout_marginLeft="@dimen/btnsize_20"
+        android:layout_marginRight="@dimen/btnsize_20"
+        android:textColorHint="@color/gray_line"
+        android:paddingLeft="8dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btnsize_48"
+        android:background="@drawable/layout_corner"
+        android:hint="请再次输入密码"
+        android:layout_marginTop="@dimen/btnsize_10"
+        android:layout_marginLeft="@dimen/btnsize_20"
+        android:layout_marginRight="@dimen/btnsize_20"
+        android:textColorHint="@color/gray_line"
+        android:paddingLeft="8dp"
+        />
+
+
+    <Button
+        android:id="@+id/setiing_btn_shure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btnsize_48"
+        android:text="@string/shure"
+        android:textColor="@color/white"
+        android:textSize="@dimen/btnsize_18"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/btnsize_20"
+        android:layout_marginRight="@dimen/btnsize_20"
+        android:background="@color/btn_gray_red"
+
+        />
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="#F5F5F5"
+              android:orientation="vertical"
+              android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/main_color">
+
+
+        <ImageView
+            android:id="@+id/iv_title_back"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:src="@mipmap/back"/>
+
+        <TextView
+            android:id="@+id/tv_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="标题"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/join_faction_tv_start"
+            android:layout_width="@dimen/btnsize_44"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="创建"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+
+            />
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/join_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="@color/gray"
+        android:dividerHeight="0.8dp"
+        android:fastScrollEnabled="true"
+        android:paddingLeft="8dp"  />
+
+</LinearLayout>
