@@ -135,6 +135,8 @@
         <activity android:name=".MVP.Home.LFFaction.ServiceDetailsActivity"/>
         <!--LF榜-->
         <activity android:name=".MVP.Home.LFList.LFListActivity"/>
+        <activity android:name=".MVP.Home.LFFaction.StartFactionActivity"/>
+
 
     </application>
 

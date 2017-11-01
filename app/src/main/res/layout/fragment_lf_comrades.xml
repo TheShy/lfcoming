@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
-              android:orientation="vertical"
-              android:gravity="center"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              android:gravity="center" >
 
 
 
-    <TextView
+    <com.xiaochao.lcrapiddeveloplibrary.viewtype.ProgressActivity
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/lf_comrades"
+        android:layout_height="match_parent"
+        android:id="@+id/lfcomarades_progress" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/lf_comrades" />
+    </com.xiaochao.lcrapiddeveloplibrary.viewtype.ProgressActivity>
 
-        />
 </LinearLayout>

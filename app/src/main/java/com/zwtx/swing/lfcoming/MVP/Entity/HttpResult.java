@@ -5,6 +5,7 @@ package com.zwtx.swing.lfcoming.MVP.Entity;
  */
 
 public class HttpResult<T> {
+
     public String msg;
     public int code;
     public T data;
@@ -15,11 +16,11 @@ public class HttpResult<T> {
         this.data = data;
     }
 
-    public String getMsg() {
+    public String msg() {
         return msg;
     }
 
-    public void setMsg(String msg) {
+    public void msg(String msg) {
         this.msg = msg;
     }
 

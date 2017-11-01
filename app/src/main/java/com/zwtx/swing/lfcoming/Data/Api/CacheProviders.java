@@ -1,8 +1,19 @@
 package com.zwtx.swing.lfcoming.Data.Api;
 
 
+import com.zwtx.swing.lfcoming.MVP.Entity.HomeDto;
+
+import java.util.concurrent.TimeUnit;
+
+import io.rx_cache.DynamicKey;
+import io.rx_cache.EvictDynamicKey;
+import io.rx_cache.LifeCache;
+import io.rx_cache.Reply;
+import rx.Observable;
+
 /**
  * 缓存API接口
+ *
  * @LifeCache设置缓存过期时间. 如果没有设置@LifeCache , 数据将被永久缓存理除非你使用了 EvictProvider, EvictDynamicKey or EvictDynamicKeyGroup .
  * EvictProvider可以明确地清理清理所有缓存数据.
  * EvictDynamicKey可以明确地清理指定的数据 DynamicKey.
@@ -12,6 +23,7 @@ package com.zwtx.swing.lfcoming.Data.Api;
  */
 public interface CacheProviders {
 
-
+    @LifeCache(duration = 7, timeUnit = TimeUnit.DAYS)
+    Observable<Reply<HomeDto>> postHomeInfo(Observable<HomeDto> oRepos, DynamicKey userName, EvictDynamicKey evictDynamicKey);
 
 }

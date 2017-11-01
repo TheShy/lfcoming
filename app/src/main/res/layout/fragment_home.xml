@@ -8,8 +8,35 @@
     android:orientation="vertical">
 
     <include layout="@layout/home_heard"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/colorPrimary" >
 
-    <include layout="@layout/home_bottom"/>
+        <TextView
+            android:id="@+id/home_tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/btnsize_20"
+            android:drawableRight="@mipmap/home_iv_city"
+            android:gravity="center_vertical"
+            android:text="北京 "
+            android:textColor="@color/white"
+            android:textSize="@dimen/btnsize_18"
+            />
 
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/btnsize_20"
+            android:src="@mipmap/home_iv_search"
+            />
 
+    </RelativeLayout>
+
+    <include layout="@layout/home_heard"/>
 </LinearLayout>

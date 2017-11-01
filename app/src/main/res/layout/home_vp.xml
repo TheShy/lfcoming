@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:background="@color/home_bgm_gray"
               android:orientation="vertical">
 
@@ -105,13 +106,14 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/gray_line"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_recycler_hot"
 
-        <android.support.v7.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/join_itm_recycler"/>
-
+        />
     </LinearLayout>
+
 
     <ListView
         android:id="@+id/lv"
@@ -120,7 +122,6 @@
         android:background="@color/white"
         android:divider="@color/gray"
         android:dividerHeight="0.8dp"
-        android:fastScrollEnabled="true"
-        >
+        android:fastScrollEnabled="true">
     </ListView>
 </LinearLayout>

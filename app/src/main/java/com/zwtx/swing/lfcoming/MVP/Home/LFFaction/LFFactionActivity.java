@@ -1,6 +1,7 @@
 package com.zwtx.swing.lfcoming.MVP.Home.LFFaction;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -8,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.zwtx.swing.lfcoming.MVP.Base.BaseActivity;
 import com.zwtx.swing.lfcoming.R;
@@ -16,6 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
+import retrofit2.http.HEAD;
 
 /**
  * Created by SuperSow
@@ -69,6 +72,19 @@ public class LFFactionActivity extends BaseActivity {
         view3 = mInflater.inflate(R.layout.activitiy_send_faction, null);
         mView= (RecyclerView) findViewById(R.id.llfaction_recycler_h);
 
+
+//        Button btn_faction = view1.findViewById(R.id.btn_faction);
+//        btn_faction.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent mIntent = new Intent(LFFactionActivity.this,MyFactionActivity.class);
+//                startActivity(mIntent);
+//            }
+//        });
+
+        RecyclerView mRecyclerView = view1.findViewById(R.id.home_recycler_hot);
+
+
         mViewList.add(view1);
         mViewList.add(view2);
         mViewList.add(view3);
@@ -80,6 +96,7 @@ public class LFFactionActivity extends BaseActivity {
         mTabLayout.addTab(mTabLayout.newTab().setText(mTitleList.get(0)));//添加tab选项卡
         mTabLayout.addTab(mTabLayout.newTab().setText(mTitleList.get(1)));
         mTabLayout.addTab(mTabLayout.newTab().setText(mTitleList.get(2)));
+
 
         mTabLayout.setTabMode(TabLayout.MODE_FIXED);//设置tab模式，当前为系统默认模式
         MyPagerAdapter mAdapter = new MyPagerAdapter(mViewList);
@@ -100,15 +117,12 @@ public class LFFactionActivity extends BaseActivity {
 
 
     }
-
     //ViewPager适配器
     class MyPagerAdapter extends PagerAdapter {
         private List<View> mViewList;
 
         public MyPagerAdapter(List<View> mViewList) {
             this.mViewList = mViewList;
-
-
         }
 
         @Override
@@ -138,4 +152,6 @@ public class LFFactionActivity extends BaseActivity {
         }
 
     }
+
+
 }
