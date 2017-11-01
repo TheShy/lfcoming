@@ -1,80 +1,214 @@
 <resources>
 
     <!-- Base application theme. -->
+
+
+    -
+
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
         <item name="android:windowIsTranslucent">true</item>
+
         <item name="android:windowNoTitle">true</item>
+
         <item name="android:windowActionBar">false</item>
+
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+
     </style>
 
     <!--避免第一次进来白屏或黑屏-->
+
+
+    -
+
     <style name="AppTheme.Splash">
+
         <item name="windowActionBar">false</item>
+
         <item name="windowNoTitle">true</item>
+
         <item name="android:windowBackground">@android:color/transparent</item>
+
         <item name="android:windowIsTranslucent">true</item>
+
         <item name="android:windowFullscreen">true</item>
+
         <item name="android:windowContentOverlay">@null</item>
-    </style>
-    <!--首次进入无黑色-->
-    <style name="welcomeTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="android:textColorPrimary">@android:color/white</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="windowActionBar">false</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowBackground">@drawable/splash</item>
+
     </style>
 
-    <!--首页radiobutton  自定义效果-->
-    <style name="RadioButtonBottomTab">
-        <item name="android:layout_weight">1</item>
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">45dp</item>
-        <item name="android:button">@null</item>
-        <item name="android:textSize">@dimen/txtsize_16</item>
-        <item name="android:textColor">@drawable/txtcolor_gray2oran_sel1</item>
-        <item name="android:gravity">center</item>
-        <item name="android:background">@color/white</item>
+    <!--首次进入无黑色-->
+
+
+    -
+
+    <style name="welcomeTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="android:textColorPrimary">@android:color/white</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="windowActionBar">false</item>
+
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:windowBackground">@drawable/splash</item>
+
     </style>
-    <!--首页底部tabstyle-->
-    <style name="ActivityTitle">
-        <item name="android:layout_width">match_parent</item>
+
+    <!--首页radiobutton 自定义效果-->
+
+
+    -
+
+    <style name="RadioButtonBottomTab">
+
+        <item name="android:layout_weight">1</item>
+
+        <item name="android:layout_width">0dp</item>
+
         <item name="android:layout_height">45dp</item>
+
+        <item name="android:button">@null</item>
+
+        <item name="android:textSize">@dimen/txtsize_11</item>
+
+        <item name="android:textColor">@drawable/txtcolor_gray2oran_sel1</item>
+
+        <item name="android:gravity">center</item>
+
+        <item name="android:background">@color/white</item>
+
+    </style>
+
+    <!--首页底部tabstyle-->
+
+
+    -
+
+    <style name="ActivityTitle">
+
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="android:layout_height">45dp</item>
+
         <item name="android:orientation">horizontal</item>
+
         <item name="android:gravity">center_vertical</item>
+
         <item name="android:layout_marginRight">15dp</item>
+
     </style>
 
     <!--对话框style-->
+
+
+    -
+
     <style name="MyDialog1" parent="@android:style/Theme.Dialog">
+
         <item name="android:windowFrame">@null</item>
+
         <item name="android:windowNoTitle">true</item>
+
         <item name="android:windowBackground">@drawable/dialog_bj_hint</item>
+
         <item name="android:windowIsFloating">true</item>
+
         <item name="android:windowContentOverlay">@null</item>
-        <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
-        <item name="android:backgroundDimAmount">0.6</item><!-- 灰度 -->
+
+        <item name="android:backgroundDimEnabled">true</item>
+
+        <!-- 模糊 -->
+
+
+        <item name="android:backgroundDimAmount">0.6</item>
+
+        <!-- 灰度 -->
+
+
     </style>
+
+
+    -
 
     <style name="TextStyle_context">
+
         <item name="android:textSize">15dp</item>
+
         <item name="android:textColor">@color/text_color_context</item>
+
     </style>
 
+
+    -
+
     <style name="MatchMatch">
+
         <item name="android:layout_width">match_parent</item>
+
         <item name="android:layout_height">120dp</item>
+
     </style>
+
+
+    -
+
     <style name="WrapWrap">
+
         <item name="android:layout_width">wrap_content</item>
+
         <item name="android:layout_height">wrap_content</item>
+
     </style>
+
+
+    -
+
     <style name="MainAppBar" parent="android:Widget">
+
         <item name="elevation">0dip</item>
+
         <item name="android:background">@android:color/transparent</item>
+
+    </style>
+
+    <!--LF榜单的TabLayoutStyle-->
+
+
+    -
+
+    <style name="CustomTabLayoutStyle" parent="Widget.Design.TabLayout">
+
+        <item name="tabIndicatorColor">@color/home_title_bgm</item>
+
+        <item name="tabIndicatorHeight">2dp</item>
+
+        <item name="android:textColor">@color/test</item>
+
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+
+        <item name="tabSelectedTextColor">@color/home_title_bgm</item>
+
+    </style>
+
+
+    -
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+
+        <item name="android:textSize">@dimen/txtsize_15</item>
+
+        <item name="android:textColor">@color/test</item>
+
     </style>
 
 </resources>

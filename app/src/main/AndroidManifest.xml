@@ -129,12 +129,12 @@
         <activity android:name=".MVP.Home.CallLF.HelpAdressActivity"/>
         <!--雷锋帮-->
         <activity android:name=".MVP.Home.LFFaction.LFFactionActivity"/>
-        <activity android:name=".MVP.Home.LFFaction.MyFactionActivity"/>
         <activity android:name=".MVP.Home.LFFaction.FoundFActivity"/>
         <activity android:name=".MVP.Home.LFFaction.JoinFactionActivity"/>
         <activity android:name=".MVP.Home.LFFaction.SendServiceActivity"/>
         <activity android:name=".MVP.Home.LFFaction.ServiceDetailsActivity"/>
-
+        <!--LF榜-->
+        <activity android:name=".MVP.Home.LFList.LFListActivity"/>
 
     </application>
 

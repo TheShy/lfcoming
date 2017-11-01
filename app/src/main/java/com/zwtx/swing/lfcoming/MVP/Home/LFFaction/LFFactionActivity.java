@@ -1,14 +1,13 @@
 package com.zwtx.swing.lfcoming.MVP.Home.LFFaction;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import com.zwtx.swing.lfcoming.MVP.Base.BaseActivity;
 import com.zwtx.swing.lfcoming.R;
@@ -33,8 +32,10 @@ public class LFFactionActivity extends BaseActivity {
 
     private LayoutInflater mInflater;
     private List<String> mTitleList = new ArrayList<>();//页卡标题集合
-    private View view1, view2,view3;//页卡视图
+    private View view1, view2, view3;//页卡视图
     private List<View> mViewList = new ArrayList<>();//页卡视图集合
+
+    private RecyclerView mView;
 
     @Override
     protected void loadViewLayout() {
@@ -46,6 +47,8 @@ public class LFFactionActivity extends BaseActivity {
     protected void findViewById() {
         mTabLayout = (TabLayout) findViewById(R.id.lffaciton_tab);
         mViewPager = (ViewPager) findViewById(R.id.lffaciton_vp);
+
+
     }
 
     @Override
@@ -58,25 +61,21 @@ public class LFFactionActivity extends BaseActivity {
     @Override
     protected void processLogic() {
         mInflater = LayoutInflater.from(this);
-        view1 = mInflater.inflate(R.layout.home_vp, null);
-        view2 = mInflater.inflate(R.layout.home_vp, null);
-        view3 = mInflater.inflate(R.layout.home_vp,null);
+        //LF帮
+        view1 = mInflater.inflate(R.layout.activityi_llfaciton_list, null);
+        //我的LF帮
+        view2 = mInflater.inflate(R.layout.activity_myfaction, null);
+        //创建雷锋帮
+        view3 = mInflater.inflate(R.layout.activitiy_send_faction, null);
+        mView= (RecyclerView) findViewById(R.id.llfaction_recycler_h);
 
-        Button btn_faction = view1.findViewById(R.id.btn_faction);
-        btn_faction.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent mIntent = new Intent(LFFactionActivity.this,MyFactionActivity.class);
-                startActivity(mIntent);
-            }
-        });
         mViewList.add(view1);
         mViewList.add(view2);
         mViewList.add(view3);
 
-        mTitleList.add("我的雷锋帮");
-        mTitleList.add("雷锋帮");
-        mTitleList.add("雷锋社区");
+        mTitleList.add("LF帮");
+        mTitleList.add("我的LF帮");
+        mTitleList.add("创建LF帮");
 
         mTabLayout.addTab(mTabLayout.newTab().setText(mTitleList.get(0)));//添加tab选项卡
         mTabLayout.addTab(mTabLayout.newTab().setText(mTitleList.get(1)));
@@ -90,6 +89,7 @@ public class LFFactionActivity extends BaseActivity {
 
     }
 
+
     @Override
     protected Context getActivityContext() {
         return null;
@@ -97,7 +97,6 @@ public class LFFactionActivity extends BaseActivity {
 
     @Override
     public void onClick(View v) {
-
 
 
     }

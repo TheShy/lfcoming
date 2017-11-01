@@ -5,8 +5,6 @@
               android:id="@+id/home_layout_heard"
               xmlns:app="http://schemas.android.com/apk/res-auto"
               android:layout_height="563dp">
-
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="48dp"
@@ -80,7 +78,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
+        android:background="@mipmap/home_bgm"
         android:orientation="horizontal">
         <LinearLayout
             android:layout_width="0dp"
@@ -95,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:text="学习LF"
                 android:textColor="@color/txt_gray"
-                android:drawableTop="@mipmap/qq"
+                android:drawableTop="@mipmap/home_btn_xuexileifeng"
                 />
 
         </LinearLayout>
@@ -104,9 +102,8 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/btnsize_20"
-            android:layout_marginRight="@dimen/btnsize_20"
             android:layout_gravity="bottom"
+            android:layout_marginRight="10dp"
             android:orientation="vertical">
 
             <TextView
@@ -115,7 +112,7 @@
                 android:text="身边LF"
                 android:gravity="center"
                 android:textColor="@color/txt_gray"
-                android:drawableTop="@mipmap/weibo"
+                android:drawableTop="@mipmap/home_btn_shenbianleifeng"
                 />
 
         </LinearLayout>
@@ -133,14 +130,15 @@
                 android:gravity="center"
                 android:layout_marginBottom="@dimen/btnsize_40"
                 android:textColor="@color/txt_gray"
-                android:drawableTop="@mipmap/qq"
+                android:drawableTop="@mipmap/home_btn_leifengbang"
                 />
             <ImageView
+                android:id="@+id/home_iv_lfbang"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/btnsize_40"
                 android:gravity="center"
-                android:src="@mipmap/logo"
+                android:src="@mipmap/home_btn_logo"
                 />
 
         </LinearLayout>
@@ -149,18 +147,16 @@
             android:layout_weight="1"
             android:id="@+id/home_heard_layout_call"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/btnsize_20"
-            android:layout_marginBottom="@dimen/btnsize_20"
             android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
             android:orientation="vertical">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/hjlf"
-                android:id="@+id/hoem_heard_tv_call"
+                android:text="LF论坛"
                 android:gravity="center"
                 android:textColor="@color/txt_gray"
-                android:drawableTop="@mipmap/wechat"
+                android:drawableTop="@mipmap/home_btn_leifengluntan"
                 />
 
         </LinearLayout>
@@ -172,14 +168,17 @@
             android:layout_marginRight="@dimen/btnsize_20"
             android:layout_gravity="center_vertical"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="LF论坛"
+                android:text="@string/hjlf"
+                android:id="@+id/hoem_heard_tv_call"
                 android:gravity="center"
                 android:textColor="@color/txt_gray"
-                android:drawableTop="@mipmap/weibo"
+                android:drawableTop="@mipmap/home_btn_hujiaoleifeng"
                 />
+
 
         </LinearLayout>
 

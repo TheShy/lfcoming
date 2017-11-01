@@ -8,7 +8,7 @@ import com.zwtx.swing.lfcoming.MVP.Entity.HttpResult;
  * 按照自己公司的接口需求来  不可直接套用
  * 使用需谨慎
  * 有什么问题可以联系我
- * 邮箱80945540@qq.com
+ *
  */
 public class ApiException extends RuntimeException {
 

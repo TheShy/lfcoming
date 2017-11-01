@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lf_list_ll"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/btnsize_48"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/lf_list_sort_id"
+        android:layout_width="@dimen/txtsize_15"
+        android:layout_height="@dimen/txtsize_15"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/tv_bg_color_second"
+        android:gravity="center_horizontal|top"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txtsize_12" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/lf_list_icon1"
+        android:layout_width="@dimen/btnsize_22"
+        android:layout_height="@dimen/btnsize_22"
+        android:layout_marginLeft="@dimen/btnsize_8"
+        android:elevation="@dimen/btnsize_3"
+        android:src="@color/tv_bg_first"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="1dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/btnsize_6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lf_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize_15" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lf_list_user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/btnsize_25"
+        android:text="ID999999"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txtsize_12" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/lf_list_icon2"
+        android:layout_width="@dimen/btnsize_22"
+        android:layout_height="@dimen/btnsize_22"
+        android:layout_marginLeft="@dimen/btnsize_37"
+        android:elevation="@dimen/btnsize_3"
+        android:src="@color/tv_bg_first"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/lf_list_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/btnsize_14"
+        android:text="4030"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txtsize_15" />
+</LinearLayout>

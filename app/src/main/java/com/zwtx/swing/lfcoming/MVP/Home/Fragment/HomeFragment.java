@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -12,6 +13,7 @@ import com.zaaach.citypicker.CityPickerActivity;
 import com.zwtx.swing.lfcoming.MVP.Base.BaseFragment;
 import com.zwtx.swing.lfcoming.MVP.Home.CallLF.CallLFActivity;
 import com.zwtx.swing.lfcoming.MVP.Home.LFFaction.LFFactionActivity;
+import com.zwtx.swing.lfcoming.MVP.Home.LFList.LFListActivity;
 import com.zwtx.swing.lfcoming.MVP.Home.MyStudyLF.MyStudyLFActivity;
 import com.zwtx.swing.lfcoming.R;
 
@@ -39,6 +41,9 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     @BindView(R.id.hoem_heard_tv_call)
     TextView tv_call;
 
+    @BindView(R.id.home_iv_lfbang)
+    ImageView iv_lfb;
+
     @Override
     protected View initView(LayoutInflater inflater, ViewGroup container) {
         return inflater.inflate(R.layout.fragment_home, container, false);
@@ -51,6 +56,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         tv_lfb.setOnClickListener(this);
         layout_call.setOnClickListener(this);
         tv_call.setOnClickListener(this);
+        iv_lfb.setOnClickListener(this);
     }
 
     @Override
@@ -62,7 +68,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         tv_call=getActivity().findViewById(R.id.hoem_heard_tv_call);
         mBanner=getActivity().findViewById(R.id.home_banner);
         mBanner.setData(R.mipmap.vp_first,R.mipmap.vp_second,R.mipmap.vp_third);
-
+        iv_lfb=getActivity().findViewById(R.id.home_iv_lfbang);
 
 
     }
@@ -105,6 +111,10 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                 break;
             case R.id.hoem_heard_tv_call:
                 mIntent = new Intent(getActivity(), CallLFActivity.class);
+                startActivity(mIntent);
+                break;
+            case R.id.home_iv_lfbang:
+                mIntent = new Intent(getActivity(), LFListActivity.class);
                 startActivity(mIntent);
                 break;
         }

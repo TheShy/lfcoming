@@ -1,45 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- app主色调-->
+
+
     <color name="main_color">#e45858</color>
+
     <color name="btn_bgm">#ce3e3e</color>
+
     <color name="line_bgm">#f0a3a3</color>
+
     <color name="title_bgm">#B01E21</color>
+
     <color name="home_title_bgm">#B01E21</color>
+
     <color name="txt_bgm">#ccc</color>
+
     <color name="get_code_bgm">#ff7979</color>
+
     <color name="main_line_red">#c80b0b</color>
+
     <color name="gray_red">#b53737</color>
+
     <color name="btn_gray_red">#ce3e3e</color>
+
+    <color name="tv_bg_first">#E45858</color>
+
+    <color name="tv_bg_second">#FF5656</color>
+
+    <color name="tv_bg_third">#FF8F8F</color>
+
+    <color name="lf_list_iv_bg_normal">#FF8888</color>
+
+    <color name="lf_list_ll_first_bg">#DC3831</color>
+
+    <color name="lf_list_ll_second_bg">#78AA00</color>
+
+    <color name="lf_list_ll_third_bg">#0096D5</color>
+
     <color name="white_alpha_half">#99FFFFFF</color>
+
     <color name="gray">#FFF0F0F0</color>
+
     <color name="test">#999999</color>
+
     <color name="gray_line">#CCCCCC</color>
+
     <color name="gray_deep">#c9000000</color>
+
     <color name="transparent">#00000000</color>
+
     <color name="role_right_gray">#929292</color>
+
     <color name="role_yellow_gray">#33CC99</color>
+
     <color name="tv_right_gray">#929292</color>
+
     <color name="bg_white_gray">#f2f2f2</color>
+
     <color name="tv_talk_content">#FFB3B3B3</color>
+
     <color name="line_recent_contact">#FFEEEEEE</color>
+
     <color name="light_gray">#808080</color>
+
     <color name="light_white">#33ffffff</color>
+
     <color name="chat_tip_color">#FFcccccc</color>
+
     <color name="blue">#5CA3E5</color>
+
     <color name="toast_stroke_gray">#99d4d4d4</color>
+
     <color name="colorPrimary">#3F51B5</color>
+
     <color name="colorPrimaryDark">#303F9F</color>
+
     <color name="colorAccent">#FF4081</color>
+
     <color name="window_gray">#f4f4f4</color>
+
     <color name="white">#FFF</color>
+
     <color name="black">#000</color>
 
     <color name="home_bgm_gray">#F5F5F5</color>
-    <color name="txt_gray">#999999</color>
-    <color name="text_color_context">#666666</color><!-- 字体颜色  标题灰色 -->
-    <color name="text_color_qianhui">#999999</color><!-- 字体颜色  标题灰色 -->
 
+    <color name="txt_gray">#999999</color>
+
+    <color name="text_color_context">#666666</color>
+
+    <!-- 字体颜色 标题灰色 -->
+
+
+    <color name="text_color_qianhui">#999999</color>
 
 
 

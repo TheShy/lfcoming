@@ -98,6 +98,7 @@ public class JoinFactionActivity extends BaseActivity {
         }
         return list;
     }
+
     static class ViewHolder {
         public TextView name, numb;
         public CircleImageView heard;

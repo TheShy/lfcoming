@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/lf_list_rg"
+        android:layout_width="320dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/lf_list_rb_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rb_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="日 榜"
+            android:textColor="@color/rb_textcolor_selector"
+            android:textSize="@dimen/txtsize_15" />
+
+        <RadioButton
+            android:id="@+id/lf_list_rb_zb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rb_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="周 榜"
+            android:textColor="@color/rb_textcolor_selector"
+            android:textSize="@dimen/txtsize_15" />
+
+        <RadioButton
+            android:id="@+id/lf_list_rb_yb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rb_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="月 榜"
+            android:textColor="@color/rb_textcolor_selector"
+            android:textSize="@dimen/txtsize_15" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/btnsize_24"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/tv_bg_color_second"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textSize="@dimen/txtsize_12" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/lf_list_second_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/btnsize_9"
+                android:gravity="center"
+                android:text="张章"
+                android:textColor="@color/test"
+                android:textSize="@dimen/txtsize_14" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/btnsize_15"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/tv_bg_color_first"
+                    android:gravity="center_horizontal|top"
+                    android:text="1"
+                    android:textSize="@dimen/txtsize_12" />
+
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/lf_list_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/btnsize_9"
+                android:gravity="center"
+                android:text="王建国"
+                android:textColor="@color/test"
+                android:textSize="@dimen/txtsize_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/btnsize_24"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/tv_bg_color_third"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textSize="@dimen/txtsize_12" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/lf_list_third_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:text="刘强"
+                android:textColor="@color/test"
+                android:textSize="@dimen/txtsize_14" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_lf_list"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/btnsize_2" />
+
+
+</LinearLayout>
